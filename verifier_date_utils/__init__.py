@@ -1,5 +1,3 @@
-# This was all lifted from upvote.common.utils.date.
-
 from datetime import date, datetime, time as dtime, timedelta
 
 from logging import getLogger

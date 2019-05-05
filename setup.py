@@ -15,16 +15,15 @@ if sys.version_info >= (3,):
     extra_setup['use_2to3'] = True
 
 setup(
-***REMOVED***
+    name='verifier_date_utils',
     version='1.0',
     description='Various utilities for operating on dates and times',
     long_description=open('README.rst').read(),
     author='Erik Rose',
-***REMOVED***
     packages=find_packages(exclude=['ez_setup']),
     tests_require=['nose', 'mock'],
     test_suite='nose.collector',
-***REMOVED***
+    url='https://github.com/civiccc/verifier_date_utils',
     include_package_data=True,
     classifiers=[
         'Intended Audience :: Developers',

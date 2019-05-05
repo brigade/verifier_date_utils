@@ -6,7 +6,7 @@ from unittest import TestCase
 from mock import patch
 from nose.tools import eq_, ok_, raises
 
-***REMOVED***
+from verifier_date_utils import (convert_datestring_format,
     convert_datestring_to_datetime, convert_date_to_datetime,
     date_before, date_after, find_day_of_week, is_recent,
     time_in_millis, years_ago, iso_year_start, iso_to_gregorian,
@@ -116,7 +116,7 @@ class DateParsingTestCase(TestCase):
         ok_(not is_recent(datetime.now() - timedelta(minutes=2)))
         ok_(is_recent(datetime.now() - timedelta(minutes=2), minutes=4))
 
-***REMOVED***
+    @patch('verifier_date_utils.gmtime')
     def test_time_in_millis(self, mock_gmtime):
         t = gmtime()
         mock_gmtime.return_value = t
